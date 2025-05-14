@@ -1,4 +1,3 @@
-/* Polices et couleurs féeriques */
 body {
   font-family: 'Georgia', serif;
   background: linear-gradient(#f3f0eb, #e6e0d4);
@@ -39,6 +38,43 @@ nav a:hover {
   color: #ffd5a5;
 }
 
+.banner {
+  background: url("images/banner.jpg") center/cover no-repeat;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  position: relative;
+  border-bottom: 4px solid var(--cuivre);
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(90, 26, 26, 0.5); /* Overlay bordeaux semi-transparent */
+}
+
+.banner-content {
+  position: relative;
+  color: #fffbe6;
+  text-align: center;
+  max-width: 90%;
+  z-index: 1;
+}
+
+.banner-content h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.banner-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+
 main {
   padding: 2rem;
 }
@@ -51,27 +87,34 @@ main {
   font-size: 2rem;
   border-bottom: 2px solid #5e4b3c;
   padding-bottom: 0.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
+/* Scroll horizontal */
 .books {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 1.5rem;
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
 }
 
 .book-card {
+  min-width: 160px;
+  flex: 0 0 auto;
   background-color: #fffaf5;
   border: 1px solid #d9c9b3;
   border-radius: 10px;
   padding: 1rem;
   text-align: center;
   box-shadow: 0 3px 6px rgba(94, 75, 60, 0.1);
+  scroll-snap-align: start;
   transition: transform 0.2s ease;
 }
 
 .book-card:hover {
-  transform: scale(1.03);
+  transform: scale(1.05);
 }
 
 .book-card img {
