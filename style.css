@@ -39,6 +39,56 @@ nav a:hover {
   color: #ffd5a5;
 }
 
+
+
+/* Style des liens de navigation */
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+/* Style des liens */
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  display: block;
+}
+
+
+/* Style des sous-catégories */
+.sub-categories {
+  list-style-type: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444;
+  display: none;
+  min-width: 160px;
+}
+
+.sub-categories li {
+  padding: 10px;
+}
+
+.sub-categories li a {
+  color: white;
+  padding: 5px 10px;
+}
+
+/* Apparition des sous-catégories au survol de la rubrique Catégories */
+.categories:hover .sub-categories {
+  display: block;
+  z-index: 2;
+}
+
+
+
 .banner {
   background: url("images/banner.jpg") center/cover no-repeat;
   height: 350px;
@@ -204,34 +254,28 @@ main {
   font-size: 0.9rem;
   color: #6c5a48;
 }
-/* Scrollbar moderne et épurée */
 
-/* Webkit (Chrome, Safari, Edge) */
+/* Cacher la scrollbar Webkit */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 0px;
+  height: 0px;
 }
 
+/* Cacher le track */
 ::-webkit-scrollbar-track {
   background: transparent;
 }
 
+/* Cacher le thumb */
 ::-webkit-scrollbar-thumb {
-  background: rgba(120, 120, 255, 0.4);
-  border-radius: 8px;
-  transition: background 0.3s;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(100, 100, 255, 0.8);
+  background: transparent;
 }
 
 /* Firefox */
 * {
-  scrollbar-width: thin;
-  scrollbar-color: rgba(120, 120, 255, 0.5) transparent;
+  scrollbar-width: none;
+  scrollbar-color: transparent transparent;
 }
-
 
 footer {
   background-color: #5e4b3c;
