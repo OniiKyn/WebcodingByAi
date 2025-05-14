@@ -224,6 +224,8 @@ main {
 
 .book-card {
   min-width: 160px;
+  max-width: 200px;
+  height: auto;
   flex: 0 0 auto;
   background-color: #fffaf5;
   border: 1px solid #d9c9b3;
