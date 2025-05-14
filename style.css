@@ -1,0 +1,99 @@
+/* Polices et couleurs féeriques */
+body {
+  font-family: 'Georgia', serif;
+  background: linear-gradient(#f3f0eb, #e6e0d4);
+  color: #3e2f2f;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #5e4b3c;
+  color: #fffaf0;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+nav a {
+  color: #fffaf0;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffd5a5;
+}
+
+main {
+  padding: 2rem;
+}
+
+.catalogue {
+  margin-bottom: 3rem;
+}
+
+.catalogue h2 {
+  font-size: 2rem;
+  border-bottom: 2px solid #5e4b3c;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.books {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1.5rem;
+}
+
+.book-card {
+  background-color: #fffaf5;
+  border: 1px solid #d9c9b3;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(94, 75, 60, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.book-card:hover {
+  transform: scale(1.03);
+}
+
+.book-card img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+.book-card h3 {
+  font-size: 1rem;
+  margin: 0.5rem 0 0.2rem;
+}
+
+.book-card p {
+  font-size: 0.9rem;
+  color: #6c5a48;
+}
+
+footer {
+  background-color: #5e4b3c;
+  color: #fffaf0;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
