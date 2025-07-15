@@ -1,13 +1,4 @@
-:root {
-  --vert-sauge: #A8D8B9;
-  --vert-doux: #D3F8E2;
-  --violet-doux: #C6A0F6;
-  --lavande: #EBD8FF;
-  --beige-pale: #FFF7EC;
-  --orange-pastel: #FFBC9A;
-  --cuivre: #C4926E;
-  --brun-foncé: #3D2C2E;
-}
+
 
 body {
   font-family: 'Georgia', serif;
@@ -19,7 +10,7 @@ body {
 }
 
 header {
-  background-color: #FFBC9A;
+  background-color: #A3B18A;
   color: #fffaf0;
   padding: 1.5rem;
   text-align: center;
