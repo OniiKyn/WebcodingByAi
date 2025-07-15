@@ -8,50 +8,61 @@
   </head>
   <body>
     <header>
-  <div class="container">
-   <section id="sectHead">
-  <div class="header-title-icons">
-    <!-- <h1>📚 La Librairie Enchantée</h1> -->
-   
-    
-  </div>
-</section>
+      <div class="container">
+        <section id="sectHead">
+          <div class="header-title-icons">
+          </div>
+        </section>
 
-    <nav>
-  <ul>
-    <li><a href="#fantasy">Fantasy</a></li>
-    <li><a href="#romantasy">Romantasy</a></li>
-    <li><a href="#young-adult">Young Adult</a></li>
-    <li><a href="#fantastique">Fantastique</a></li>
-    <li><a href="#romance">Romance</a></li>
-    <li><a href="#dark-romance">Dark Romance</a></li>
-    <li><a href="#" aria-label="Profil">
-      <img src="images/user-icon.png" alt="Profil" style="vertical-align: middle; width: 24px; height: 24px;">
-    </a></li>
-    <li><a href="#" aria-label="Panier">
-      <img src="images/cart-icon.png" alt="Panier" style="vertical-align: middle; width: 24px; height: 24px;">
-    </a></li>
-  </ul>
-</nav>
-  </div>
-</header>
+       <nav>
+    <ul class="nav-links">
+      <li><a href="#">Accueil</a></li>
+      <li class="categories">
+        <a href="#">Catégories</a>
+        <ul class="sub-categories">
+          <li><a href="#nouveautes">Nouveautés</a></li>
+          <li><a href="#fantasy">Fantasy</a></li>
+          <li><a href="#romantasy">Romantasy</a></li>
+          <li><a href="#young-adult">Young Adult</a></li>
+          <li><a href="#fantastique">Fantastique</a></li>
+          <li><a href="#romance">Romance</a></li>
+          <li><a href="#dark-romance">Dark Romance</a></li>
+          <li><a href="#contes-interdits">Contes interdits</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Témoignages</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#" aria-label="Profil">
+        <img src="images/user-icon.png" alt="Profil">
+      </a></li>
+      <li><a href="#" aria-label="Panier">
+        <img src="images/cart-icon.png" alt="Panier">
+      </a></li>
+    </ul>
 
+
+  </nav>  
+      </div>
+    </header>
 
     <head>
-      <h1>📚 La Librairie Enchantée</h1>
+      <h1>La Librairie Enchantée</h1>
       <section class="banner">
-        <div class="banner-content">
+        <div class="banner-content container">
           <h2>Plongez dans des mondes enchantés ✨</h2>
+          <p class="ouverture">Ouverture prochaine</p>
+          <!-- ← AJOUT ICI -->
           <p>
-            Découvrez notre Café Librairie : une invitation à l'évasion autour d'une bonne boisson !
+            Découvrez notre sélection de romans fantasy, romantasy, fantastique
+            et plus encore !
           </p>
-          <a href="#sectHead" class="cta-button">Ouverture prochaine</a>
+          <a href="#fantasy" class="cta-button">Explorer le catalogue</a>
         </div>
       </section>
     </head>
 
     <main>
-      
       <section class="catalogue" id="nouveautes">
         <h2>🔔 Nouveauté du mois</h2>
         <div class="books">
@@ -61,22 +72,34 @@
             <p>Rebecca Yarros</p>
           </article>
           <article class="book-card">
-            <img src="images/dark-romance/valentina-2.jpg" alt="Valentina tome 2" />
+            <img
+              src="images/dark-romance/valentina-2.jpg"
+              alt="Valentina tome 2"
+            />
             <h3>Valentina - T2</h3>
             <p>Azra Reed</p>
           </article>
           <article class="book-card">
-            <img src="images/fantasy/le-sang-et-la-cendre-tome-1-4926051.jpg" alt="Le Sang et la Cendre tome 1" />
+            <img
+              src="images/fantasy/le-sang-et-la-cendre-tome-1-4926051.jpg"
+              alt="Le Sang et la Cendre tome 1"
+            />
             <h3>Le Sang et la Cendre - T1</h3>
             <p>Jennifer L. Armentrout</p>
           </article>
           <article class="book-card">
-            <img src="images/romantasy/lettres-denchantement-tome-1-divines-rivalites-5383201.jpg" alt="Divines Rivalités tome 1" />
+            <img
+              src="images/romantasy/lettres-denchantement-tome-1-divines-rivalites-5383201.jpg"
+              alt="Divines Rivalités tome 1"
+            />
             <h3>Divines Rivalités - T1</h3>
             <p>Rebecca Ross</p>
           </article>
           <article class="book-card">
-            <img src="images/dark-romance/lakestone-2.jpg" alt="Lakestone tome 2" />
+            <img
+              src="images/dark-romance/lakestone-2.jpg"
+              alt="Lakestone tome 2"
+            />
             <h3>Lakestone - T2</h3>
             <p>Sarah Rivens</p>
           </article>
@@ -112,9 +135,11 @@
       <section class="catalogue" id="fantasy">
         <h2>✨ Fantasy</h2>
         <div class="books">
-
           <article class="book-card">
-            <img src="images/fantasy/fourth-wing-5253815.jpg" alt="Fourth Wing" />
+            <img
+              src="images/fantasy/fourth-wing-5253815.jpg"
+              alt="Fourth Wing"
+            />
             <h3>Fourth Wing - T1</h3>
             <p>Rebecca Yarros</p>
           </article>
@@ -124,18 +149,27 @@
             <p>Rebecca Yarros</p>
           </article>
           <article class="book-card">
-            <img src="images/fantasy/le-sang-et-la-cendre-tome-1-4926051.jpg" alt="Le Sang et la Cendre tome 1" />
+            <img
+              src="images/fantasy/le-sang-et-la-cendre-tome-1-4926051.jpg"
+              alt="Le Sang et la Cendre tome 1"
+            />
             <h3>Le Sang et la Cendre - T1</h3>
             <p>Jennifer L. Armentrout</p>
           </article>
           <article class="book-card">
-            <img src="images/fantasy/atlas-tome-1-atlas-six-5029317.jpg" alt="Atlas Six tome 1" />
+            <img
+              src="images/fantasy/atlas-tome-1-atlas-six-5029317.jpg"
+              alt="Atlas Six tome 1"
+            />
             <h3>Atlas Six - T1</h3>
             <p>Olivie Blake</p>
           </article>
           <article class="book-card">
-            <img src="images/fantasy/a-lombre-des-eaux-troubles-5636314.jpg" alt="A l'ombre des eaux troubles" />
-            <h3>À l'ombre des eaux troubles</h3> 
+            <img
+              src="images/fantasy/a-lombre-des-eaux-troubles-5636314.jpg"
+              alt="A l'ombre des eaux troubles"
+            />
+            <h3>À l'ombre des eaux troubles</h3>
             <p>Allison Saft</p>
           </article>
           <!--<article class="book-card">
@@ -170,8 +204,8 @@
 
       <section class="catalogue" id="romantasy">
         <h2>💖 Romantasy</h2>
-       <div class="books">
-           <!-- <article class="book-card">
+        <div class="books">
+          <!-- <article class="book-card">
             <img src="images/romantasy1.jpg" alt="Couverture romantasy" />
             <h3>Lune Rouge</h3>
             <p>L. Farrow</p>
@@ -197,27 +231,42 @@
             <p>L. Farrow</p> 
           </article>-->
           <article class="book-card">
-            <img src="images/romantasy/the-crimson-moth-tome-1-heartless-hunter-5508505.jpg" alt="Heartless Hunter tome 1" />
+            <img
+              src="images/romantasy/the-crimson-moth-tome-1-heartless-hunter-5508505.jpg"
+              alt="Heartless Hunter tome 1"
+            />
             <h3>Heartless Hunter - T1</h3>
             <p>Kristen Ciccarelli</p>
           </article>
           <article class="book-card">
-            <img src="images/romantasy/lettres-denchantement-tome-1-divines-rivalites-5383201.jpg" alt="Divines Rivalités tome 1" />
+            <img
+              src="images/romantasy/lettres-denchantement-tome-1-divines-rivalites-5383201.jpg"
+              alt="Divines Rivalités tome 1"
+            />
             <h3>Divines Rivalités - T1</h3>
             <p>Rebecca Ross</p>
           </article>
           <article class="book-card">
-            <img src="images/romantasy/le-pont-des-tempetes-tome-1-5065489.jpg" alt="Le Pont des Tempêtes tome 1" />
+            <img
+              src="images/romantasy/le-pont-des-tempetes-tome-1-5065489.jpg"
+              alt="Le Pont des Tempêtes tome 1"
+            />
             <h3>Le Pont des Tempêtes - T1</h3>
             <p>Danielle L. Jensen</p>
           </article>
           <article class="book-card">
-            <img src="images/romantasy/la-saga-des-sans-destin-tome-1-un-destin-encre-dans-le-sang-5403535.jpg" alt="Un destin encré dans le sang tome 1" />
+            <img
+              src="images/romantasy/la-saga-des-sans-destin-tome-1-un-destin-encre-dans-le-sang-5403535.jpg"
+              alt="Un destin encré dans le sang tome 1"
+            />
             <h3>Un destin encré dans le sang - T1</h3>
             <p>Danielle L. Jensen</p>
           </article>
           <article class="book-card">
-            <img src="images/romantasy/emily-wilde-tome-1-lencyclopedie-feerique-demily-wilde-5302057.jpg" alt="L'encyclopedie feerique d'emily wilde tome 1" />
+            <img
+              src="images/romantasy/emily-wilde-tome-1-lencyclopedie-feerique-demily-wilde-5302057.jpg"
+              alt="L'encyclopedie feerique d'emily wilde tome 1"
+            />
             <h3>L'Encyclopédie féerique d'Emily Wilde - T1</h3>
             <p>Heather Fawcett</p>
           </article>
@@ -321,12 +370,18 @@
         <h2>💕 Romance</h2>
         <div class="books">
           <article class="book-card">
-            <img src="images/romance/jamais-plus-tome-1.jpg" alt="Jamais Plus" />
+            <img
+              src="images/romance/jamais-plus-tome-1.jpg"
+              alt="Jamais Plus"
+            />
             <h3>Jamais Plus - T1</h3>
             <p>Colleen Hoover</p>
           </article>
           <article class="book-card">
-            <img src="images/romance/black-venus-tome-1.jpg" alt="Black Venus" />
+            <img
+              src="images/romance/black-venus-tome-1.jpg"
+              alt="Black Venus"
+            />
             <h3>Les Légendes, Black Venus - T1</h3>
             <p>Dahlia Blake</p>
           </article>
@@ -336,7 +391,10 @@
             <p>Meagan Brandy</p>
           </article>
           <article class="book-card">
-            <img src="images/romance/a-nos-coeurs-battants.jpg" alt="A nos coeurs battants" />
+            <img
+              src="images/romance/a-nos-coeurs-battants.jpg"
+              alt="A nos coeurs battants"
+            />
             <h3>À nos coeurs battants</h3>
             <p>Emma Green</p>
           </article>
@@ -377,27 +435,42 @@
         <h2>🖤 Dark Romance</h2>
         <div class="books">
           <article class="book-card">
-            <img src="images/dark-romance/valentina-2.jpg" alt="Valentina tome 2" />
+            <img
+              src="images/dark-romance/valentina-2.jpg"
+              alt="Valentina tome 2"
+            />
             <h3>Valentina - T2</h3>
             <p>Azra Reed</p>
           </article>
           <article class="book-card">
-            <img src="images/dark-romance/lakestone-2.jpg" alt="Lakestone tome 2" />
+            <img
+              src="images/dark-romance/lakestone-2.jpg"
+              alt="Lakestone tome 2"
+            />
             <h3>Lakestone - T2</h3>
             <p>Sarah Rivens</p>
           </article>
           <article class="book-card">
-            <img src="images/dark-romance/dark-obsession-3.jpg" alt="Dark Obsession tome 3" />
+            <img
+              src="images/dark-romance/dark-obsession-3.jpg"
+              alt="Dark Obsession tome 3"
+            />
             <h3>Dark Obsession - T3</h3>
             <p>Penelope Douglas</p>
           </article>
           <article class="book-card">
-            <img src="images/dark-romance/obsession-molotov-1.jpeg" alt="Obsession Molotov tome 1" />
+            <img
+              src="images/dark-romance/obsession-molotov-1.jpeg"
+              alt="Obsession Molotov tome 1"
+            />
             <h3>Dans l'antre du diable, Obsession Molotov - T1</h3>
             <p>Anna Zaires</p>
           </article>
           <article class="book-card">
-            <img src="images/dark-romance/dark-domination.jpg" alt="Dark Domination" />
+            <img
+              src="images/dark-romance/dark-domination.jpg"
+              alt="Dark Domination"
+            />
             <h3>Dark Domination</h3>
             <p>Missy Heart</p>
           </article>
@@ -433,7 +506,10 @@
         <h2>🔒 Contes interdits</h2>
         <div class="books">
           <article class="book-card">
-            <img src="images/contes-interdits/la-belle-et-la-bete.jpg" alt="La Belle et la Bête" />
+            <img
+              src="images/contes-interdits/la-belle-et-la-bete.jpg"
+              alt="La Belle et la Bête"
+            />
             <h3>La Belle et les Bêtes</h3>
             <p>Simon Rousseau</p>
           </article>
@@ -443,7 +519,10 @@
             <p>David Bédard</p>
           </article>
           <article class="book-card">
-            <img src="images/contes-interdits/hansel-et-gretel.jpg" alt="Hansel et Gretel" />
+            <img
+              src="images/contes-interdits/hansel-et-gretel.jpg"
+              alt="Hansel et Gretel"
+            />
             <h3>Hansel et Gretel</h3>
             <p>Yvan Godbout</p>
           </article>
@@ -453,7 +532,10 @@
             <p>Simon Rousseau</p>
           </article>
           <article class="book-card">
-            <img src="images/contes-interdits/la-belle-au-bois-dormant.jpg" alt="La Belle au bois dormant" />
+            <img
+              src="images/contes-interdits/la-belle-au-bois-dormant.jpg"
+              alt="La Belle au bois dormant"
+            />
             <h3>La Belle au bois dormant</h3>
             <p>LP Sicard</p>
           </article>
