@@ -4,8 +4,13 @@
 }
 
 body {
+<<<<<<< Updated upstream
   font-family: "Sour Gummy", sans-serif;
   background: #FFF7EC;
+=======
+  font-family: 'Georgia', serif;
+  background: #A3B18A;
+>>>>>>> Stashed changes
   color: #3e2f2f;
   margin: 0 ;
   padding: 0;
@@ -309,7 +314,7 @@ main {
   max-width: 200px;
   height: auto;
   flex: 0 0 auto;
-  background-color: #fffaf5;
+  background-color: #D9D7CD;
   border: 1px solid #A98467;
   border-radius: 10px;
   padding: 1rem;
