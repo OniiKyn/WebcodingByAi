@@ -26,7 +26,7 @@ header {
   border-radius: 3em;
   box-shadow: 2px 2px 2px #283618;
   display: inline-block;
-  font-family: 'Old Standard TT', serif;
+  font-family: "Sour Gummy", sans-serif;
   font-size: 1em;
   text-decoration: none;
   padding: 1em 2em;
@@ -35,6 +35,7 @@ header {
 }
 
 .cta-button:hover {
+  font-family: "Sour Gummy", sans-serif;
   background-color: #A3B18A;
 }
 
@@ -69,10 +70,11 @@ h2 {
   margin-left: 1rem;
 }
 
-.header-icons img {
-  width: 24px;
+nav img {
+  width: auto;
   height: 24px;
   cursor: pointer;
+  
 }
 
 
@@ -93,6 +95,7 @@ nav ul {
   justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
+  
 }
 
 nav a {
@@ -104,7 +107,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #ffd5a5;
+  color: #354E41;
 }
 
 /* Style des liens de navigation */
