@@ -1,7 +1,10 @@
-
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  font-family: 'Georgia', serif;
+  font-family: "Sour Gummy", sans-serif;
   background: #FFF7EC;
   color: #3e2f2f;
   margin: 0 ;
@@ -14,16 +17,35 @@ header {
   color: #fffaf0;
   padding: 1.5rem;
   text-align: center;
-  
-  
+}
+
+#cta-button {
+  color: #344E41; /* Couleur du lien normal */
+  text-decoration: none;
+}
+
+#cta-button:visited {
+  color: #344E41; /* Même couleur que le lien normal */
 }
 
  h1 {
-  font-size: 2.5rem;
+  font-size: 4.5rem;
   margin-bottom: 0.5rem;
   justify-content: center;
   text-align: center;
+  font-family: "Sour Gummy", sans-serif;
+  font-weight: 500;
 }
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  justify-content: center;
+  text-align: center;
+  font-family: "Sour Gummy", sans-serif;
+  font-weight: 300;
+}
+
 .header-title-icons {
   display: flex;
   align-items: center;
@@ -161,11 +183,6 @@ nav a:hover {
   z-index: 1;
 }
 
-.banner-content h2 {
-  font-size: 2.2rem;
-  margin-bottom: 0.5rem;
-}
-
 .banner-content p {
   /* font-size: 1.1rem; */
   margin-bottom: 1rem;
@@ -272,6 +289,7 @@ main {
   color: #283618;
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
+  
 }
 
 /* Scroll horizontal */
