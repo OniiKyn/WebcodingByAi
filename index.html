@@ -75,6 +75,8 @@
         </div>
       </section>
     </head>
+    <button id="scrollToTopBtn" title="Remonter en haut">↑</button>
+
 
     <main>
       <section class="catalogue" id="nouveautes">
@@ -684,5 +686,27 @@
     <footer>
       <p>&copy; 2025 Librairie Enchantée – Tous droits réservés</p>
     </footer>
+
+    <script>
+  const scrollBtn = document.getElementById("scrollToTopBtn");
+
+  // Affiche le bouton quand on descend
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      scrollBtn.style.display = "block";
+    } else {
+      scrollBtn.style.display = "none";
+    }
+  });
+
+  // Remonte en haut en douceur
+  scrollBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+
   </body>
 </html>

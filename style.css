@@ -452,6 +452,27 @@ footer {
   }
 }
 
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 0.8rem 1rem;
+  font-size: 1.5rem;
+  background-color: #283618;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  display: none; /* masqué au début */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #606c38;
+  transform: scale(1.1);
+}
 
 
 /* Responsive : Mobile */
