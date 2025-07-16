@@ -328,6 +328,132 @@ footer {
 .menu-toggle:checked + .menu-icon + .nav-links {
   display: block;
 }
+
+.contact-section {
+  padding: 2rem;
+  background-color: #f5f3ef;
+  color: #333;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #283618;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form label {
+  font-weight: bold;
+  color: #6c584c;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem;
+  border: 1px solid #a98467;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #fff;
+  resize: vertical;
+}
+
+.contact-form button {
+  padding: 0.8rem;
+  background-color: #a98467;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #8b6b50;
+}
+
+.confirmation-message {
+  background-color: #d8f3dc;
+  color: #2d6a4f;
+  border: 1px solid #95d5b2;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Affiche le message si l’ancre #confirmation est dans l’URL */
+:target.confirmation-message {
+  display: block;
+}
+
+#confirmation[hidden] {
+  display: none;
+}
+
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-box {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 300px;
+  width: 90%;
+  animation: popup-appear 0.3s ease;
+}
+
+.popup-box p {
+  color: #2d6a4f;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.close-btn {
+  background: #2d6a4f;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.close-btn:hover {
+  background: #1b4332;
+}
+
+@keyframes popup-appear {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+
 /* Responsive : Mobile */
 @media (max-width: 768px) {
   .menu-icon {
