@@ -20,6 +20,27 @@ header {
   padding: 1.5rem;
   text-align: center;
 }
+/* Menu burger icône */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  width: 30px;
+  gap: 6px;
+}
+
+.menu-icon span {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+/* Cacher checkbox */
+.menu-toggle {
+  display: none;
+}
 
 .cta-button {
   background-color: #354E41;
@@ -301,4 +322,52 @@ footer {
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
+}
+
+/* Show menu when checkbox is checked */
+.menu-toggle:checked + .menu-icon + .nav-links {
+  display: block;
+}
+/* Responsive : Mobile */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    background-color: #222;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 5;
+  }
+
+  .nav-links li {
+    border-top: 1px solid #444;
+  }
+
+  .nav-links a {
+    padding: 1rem;
+  }
+
+  .menu-toggle:checked + .menu-icon + nav .nav-links {
+    display: flex;
+  }
+
+  /* Sous-catégories déroulantes */
+  .sub-categories {
+    position: static;
+    background-color: #333;
+    display: none;
+  }
+
+  .categories:focus-within .sub-categories,
+  .categories:hover .sub-categories {
+    display: flex;
+  }
 }
