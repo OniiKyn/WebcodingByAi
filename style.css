@@ -20,6 +20,7 @@ header {
   padding: 1.5rem;
   text-align: center;
 }
+
 /* Menu burger icône */
 .menu-icon {
   display: none;
@@ -439,6 +440,10 @@ footer {
 
 .close-btn:hover {
   background: #1b4332;
+}
+
+input::placeholder {
+  font-family: "Sour Gummy", sans-serif;
 }
 
 @keyframes popup-appear {
