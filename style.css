@@ -446,6 +446,10 @@ input::placeholder {
   font-family: "Sour Gummy", sans-serif;
 }
 
+textarea {
+  font-family: "Sour Gummy", sans-serif;
+}
+
 @keyframes popup-appear {
   from {
     transform: scale(0.8);
