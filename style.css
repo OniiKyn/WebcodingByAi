@@ -529,17 +529,9 @@ textarea {
   .categories:hover .sub-categories {
     display: flex;
   }
-} */
 
-.carousel-container {
-  max-width: 1200px;   /* adapte à la largeur de ton site si besoin */
-  width: 100%;
-  margin: 0 auto;
-  box-sizing: border-box;
-  overflow-x: auto;
-  padding-left: 16px;
-  padding-right: 16px;
-}
+
+
 
 /* Conteneur de la barre */
 #progress-container {
@@ -572,3 +564,126 @@ textarea {
   padding-right: 16px;
 }
 
+/* Responsive mobile pour tous les carrousels et la structure principale */
+@media (max-width: 600px) {
+  header {
+    padding: 0.7rem;
+  }
+  .banner {
+   
+    padding: 0.5rem;
+    margin-bottom: 1.2rem;
+  }
+  .banner-content h1 {
+    font-size: 1.2rem;
+  }
+  .banner-content h2 {
+    font-size: 1rem;
+  }
+  .ouverture {
+    font-size: 1rem;
+  }
+  main {
+    padding: 0.5rem;
+  }
+  .catalogue {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 1.2rem;
+  }
+  .catalogue h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.2rem;
+  }
+  .books {
+    gap: 0.3rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    overflow-x: auto;
+    scroll-padding-left: 0.2rem;
+  }
+  .book-card {
+    min-width: 70vw;
+    max-width: 70vw;
+    flex: 0 0 70vw;
+    margin: 0 auto;
+    padding: 0.5rem;
+  }
+  .book-card img {
+    max-width: 80%;
+  }
+  .book-card h3 {
+    font-size: 0.95rem;
+  }
+  .book-card p {
+    font-size: 0.8rem;
+  }
+  .carousel-container {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100vw;
+  }
+  nav ul,
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: stretch;
+  }
+  .menu-icon {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    background-color: #222;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 5;
+  }
+  .nav-links li {
+    border-top: 1px solid #444;
+  }
+  .nav-links a {
+    padding: 1rem;
+  }
+  .menu-toggle:checked + .menu-icon + nav .nav-links {
+    display: flex;
+  }
+  .header-title-icons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .header-icons {
+    margin-left: 0;
+    justify-content: center;
+  }
+  .contact-section {
+    padding: 1rem;
+    max-width: 98vw;
+  }
+  .popup-box {
+    padding: 1rem;
+    max-width: 95vw;
+  }
+  footer {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+  /* Map responsive */
+  .map-section {
+    padding: 0 0.5rem;
+  }
+  .map-section h2 {
+    font-size: 1rem;
+  }
+  .map-section div[style] {
+    height: 220px !important;
+    min-height: 180px !important;
+    max-width: 100vw !important;
+  }
+}
