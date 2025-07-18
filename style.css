@@ -529,3 +529,14 @@ textarea {
     display: flex;
   }
 }
+
+.carousel-container {
+  max-width: 1200px;   /* adapte à la largeur de ton site si besoin */
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow-x: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
