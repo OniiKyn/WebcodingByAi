@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
+
   <body>
     <header>
   <div class="container">
@@ -17,7 +18,12 @@
 
   </div>
 </section>
-
+<input type="checkbox" id="menu-toggle" class="menu-toggle" />
+  <label for="menu-toggle" class="menu-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
        <nav>
     <ul class="nav-links">
       <li><a href="#">Accueil</a></li>
@@ -36,7 +42,7 @@
       </li>
       <li><a href="#">Témoignages</a></li>
       <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="./html/contact.html">Contact</a></li>
       <li><a href="#" aria-label="Profil">
         <img src="images/profil.svg" alt="Profil">Profil
       </a></li>
@@ -69,6 +75,8 @@
         </div>
       </section>
     </head>
+    <button id="scrollToTopBtn" title="Remonter en haut">↑</button>
+
 
     <main>
       <section class="carousel-container">
@@ -679,5 +687,27 @@
     <footer>
       <p>&copy; 2025 Librairie Enchantée – Tous droits réservés</p>
     </footer>
+
+    <script>
+  const scrollBtn = document.getElementById("scrollToTopBtn");
+
+  // Affiche le bouton quand on descend
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      scrollBtn.style.display = "block";
+    } else {
+      scrollBtn.style.display = "none";
+    }
+  });
+
+  // Remonte en haut en douceur
+  scrollBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+
   </body>
 </html>

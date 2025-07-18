@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Librairie Enchantée</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <header>
+  <div class="container">
+   <section id="sectHead">
+  <div class="header-title-icons">
+
+  </div>
+</section>
+<input type="checkbox" id="menu-toggle" class="menu-toggle" />
+  <label for="menu-toggle" class="menu-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+       <nav>
+    <ul class="nav-links">
+      <li><a href="../index.html">Accueil</a></li>
+      <li class="categories">
+        <a href="#">Catégories</a>
+        <ul class="sub-categories">
+          <li><a href="../index.html">Nouveautés</a></li>
+          <li><a href="../index.html">Fantasy</a></li>
+          <li><a href="../index.html">Romantasy</a></li>
+          <li><a href="../index.html">Young Adult</a></li>
+          <li><a href="../index.html">Fantastique</a></li>
+          <li><a href="../index.html">Romance</a></li>
+          <li><a href="../index.html">Dark Romance</a></li>
+          <li><a href="../index.html">Contes interdits</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Témoignages</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="./html/contact.html">Contact</a></li>
+      <li><a href="#" aria-label="Profil">
+        <img src="../images/profil.svg" alt="Profil">Profil
+      </a></li>
+      <li><a href="#" aria-label="Panier">
+        <img src="../images/panier.svg" alt="Panier">Panier
+      </a></li>
+    </ul>
+
+
+  </nav>  
+      </div>
+    </header>
+
+ <section class="contact-section">
+  <h2>📬 Contactez-nous</h2>
+
+  <form id="contactForm" class="contact-form">
+    <label for="name">Nom complet</label>
+    <input type="text" id="name" name="name" required placeholder="Votre nom"/>
+
+    <label for="email">Adresse e-mail</label>
+    <input type="email" id="email" name="email" required placeholder="Votre adresse mail" />
+
+    <label for="subject">Sujet</label>
+    <input type="text" id="subject" name="subject" required placeholder="Sujet du message"/>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required placeholder="Votre message"></textarea>
+
+    <button type="submit">Envoyer</button>
+  </form>
+
+  <!-- Pop-up de confirmation -->
+  <div id="confirmationPopup" class="popup-overlay">
+    <div class="popup-box">
+      <p>✅ Votre message a bien été envoyé et sera traité dans les plus brefs délais, merci !</p>
+      <button id="closePopup" class="close-btn">Fermer</button>
+    </div>
+  </div>
+</section>
+
+<script>
+  const form = document.getElementById('contactForm');
+  const popup = document.getElementById('confirmationPopup');
+  const closeBtn = document.getElementById('closePopup');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault(); // Empêche l'envoi réel
+    popup.style.display = 'flex';
+
+    // Optionnel : réinitialiser le formulaire
+    form.reset();
+  });
+
+  closeBtn.addEventListener('click', function () {
+    popup.style.display = 'none';
+  });
+</script>
+
+  </body>
+  </html>
