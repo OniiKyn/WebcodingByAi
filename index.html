@@ -11,6 +11,14 @@
   </head>
 
   <body>
+    <!-- Barre de progression -->
+  <div id="progress-container">
+    <div id="progress-bar"></div>
+  </div>
+
+  <!-- Contenu long à faire défiler -->
+  <div class="content">
+
     <header>
   <div class="container">
    <section id="sectHead">
@@ -683,6 +691,7 @@
         </div>
       </section>
     </main>
+    </div>
 
     <footer>
       <p>&copy; 2025 Librairie Enchantée – Tous droits réservés</p>
@@ -707,6 +716,16 @@
       behavior: "smooth"
     });
   });
+
+  window.addEventListener('scroll', () => {
+  const scrollTop = window.scrollY;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const scrollPercent = (scrollTop / docHeight) * 100;
+
+  const progressBar = document.getElementById('progress-bar');
+  progressBar.style.width = scrollPercent + '%';
+});
+
 </script>
 
   </body>
